@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DRABO_portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icone" href="images/icone.jpg">
+</head>
+<body>
+    <header>
+        <div class="entete">
+            <div class="marque">
+                <p><span class="D">DRABO</span> <span class="P">Portfolio</span></p>
+            </div>
+            <nav>
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#portfolio">Portfolio</a>
+                <a href="#distinctions">Distinctions</a>
+                <a href="#projects_and_services">Projects and Services</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section id="home">
+            <div class="conteneur">
+                <div class="presentation">
+                    <h1 class="salutation">
+                        <span>Bonjour, je suis</span><br>
+                        <span>DRABO Abdoul Azouzoul Akim</span>
+                    </h1>
+                    <div class="socialweb">
+                        <div>
+                            <a href="https://github.com/AZOUZOUL/" target="_blank">
+                                <img src="images/github.png" alt="icone de github">
+                            </a>
+                        </div>
+                        <div>
+                            <a href="https://www.linkedin.com/in/abdoul-azouzoul-akim-drabo-459791357/" target="_blank">
+                                <img src="images/linkedin.png" alt="icone de linkedin">
+                            </a>
+                        </div>
+                        <div>
+                            <a href="mailto:draboabdoulakim667@gmail.com" target="_blank">
+                                <img src="images/gmail.png" alt="icone de gmail">
+                            </a>
+                        </div>
+                        <div>
+                            <a href="https://wa.me22654913706" target="_blank">
+                                <img src="images/whatsapp.jpg" alt="icone de whatsapp">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="contact_portfolio">
+                        <form class="acces" action="#contact">
+                            <p>
+                                <input class="bouton" type="submit" value="Me Contacter">
+                            </p>
+                        </form>
+                        <form class="acces" action="#projects_and_services">
+                            <p>
+                                <input class="bouton mail" type="submit" value="Voir mon portfolio">
+                            </p>
+                        </form>
+                    </div>
+                </div>
+                <div class="face">
+                    <img src="images/my_face.jpg" alt="mon image de profil">
+                </div>
+            </div>
+        </section>
+
+        <section id="about"></section>
+        <section id="portfolio"></section>
+        <section id="distinctions"></section>
+        <section id="projects_and_services"></section>
+        <section id="contact">
+            <h2 class="titre-contact">Me <em>Contacter</em></h2>
+            <p class="sous-titre-contact">Vous avez un projet en tête ou vous souhaitez simplement me contacter ? N'hésitez pas !</p>
+            <form class="formulaire" method="get" action="https://wa.me22654913706">
+                <div class="nom_email">
+                    <p>
+                        <label for="nom">
+                            Nom et Prénom
+                            <input type="text" name="nom" id="nom" placeholder="Votre nom" autofocus required>
+                        </label>
+                    </p>
+                    <p class="email">
+                        <label for="email">
+                            Email
+                            <input type="email" name="email" id="email" placeholder="Votre email">
+                        </label>
+                    </p>
+                </div>
+                <p>
+                    <label for="telephone">
+                        Téléphone
+                        <input type="tel" name="telephone" id="telephone" placeholder="Votre whatsapp">
+                    </label>
+                </p>
+                <p>
+                    <label for="sujet">
+                        Sujet
+                        <input type="text" name="sujet" id="sujet" placeholder="Sujet de votre message" >
+                    </label>
+                </p>
+                <p class="message">
+                    <span class="message">
+                        <label for="message">
+                            <span class="message">Message</span>
+                            <textarea class="message" name="message" id="message" placeholder="Votre message"></textarea>
+                        </label>
+                    </span>
+                    
+                </p>
+                <p>
+                    <label for="nationalite">
+                        Nationalité
+                        <select name="nationalite" id="nationalite">
+                            <option value="Burkinabè">Burkina Faso</option>
+                            <option value="Sénégalais">Sénégal</option>
+                            <option value="Autre">Autre</option>
+                        </select>
+                    </label>
+                </p>
+                <p class="case">
+                    <label for="confirmation">
+                        <input type="checkbox" name="confirmation" id="confirmation" required>
+                        Je confirme vouloir envoyer le message.
+                    </label>
+                </p>
+                <p class="boutons">
+                    <input class="bouton" type="submit" value="Envoyer sur whatsapp">
+                    <input class="bouton mail" type="submit" formaction="mailto:draboabdoulakim667@gmail.com" value="Envoyer sur gmail">
+                </p>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>© 2026 DRABO Abdoul Azouzoul Akim. Tous droits réservés.</p>
+    </footer>
+    
+</body>
+</html>

@@ -1,0 +1,255 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    color: #222222;
+    background-color: #f7f7f5;
+}
+
+h1, h2, h3 {
+    font-family: Georgia, 'Times New Roman', Times, sans-serif;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/*1. Le barre d'entête*/
+.entete {
+    background-color: #e5e7eb;
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 4rem;
+    box-shadow: 3px 3px 3px rgb(0, 0, 0, 0.7);
+    width: 100%;
+    margin: auto;
+    border-radius: 10px;
+}
+
+.entete a {
+    color: #222222;
+    padding: 15px;
+    text-decoration: none;
+    font-size: 1.3rem;
+}
+.entete a:hover {
+    color:white;
+    text-decoration: underline black;
+}
+.entete a:active {
+    /*border: 2px solid #000000;*/
+    background-color: #000000;
+}
+.D {
+    color: rgb(79, 70, 229);
+    font-size: 1.5rem;
+    padding-left: 32px;
+}
+.P {
+    color: rgb(5, 150, 105);
+    font-size: 1.5rem;
+    padding-left: 15px;
+}
+
+/*2.Le home*/
+.conteneur {
+    background-color: #DDDDDD;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.presentation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin:  0 0 0 10rem;
+}
+.face {
+    margin:auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    box-sizing: border-box;
+    border-width: 10px;
+    border-style: solid;
+    border-color: #e5e7eb;
+    border-radius: 100%;
+    box-shadow: -4px 5px 6px rgb(0, 0, 0, 0.7);
+}
+.face img {
+    border-radius: 100%;
+}
+
+.salutation {
+    margin: 0;
+
+}
+
+.socialweb a {
+    display: block;
+}
+.socialweb {
+    display: flex;
+    justify-content: start;
+    gap: 10px;
+    padding-top: 1rem;
+    box-sizing: border-box;
+    border-width: 0;
+    border-style: solid;
+    border-color: #e5e7eb;
+}
+
+.socialweb img {
+    width: 20px;
+    height: auto;
+}
+
+
+:focus {
+    background-color: #a9acaa;
+}
+
+
+
+footer {
+    background-color: #FFFFFF;
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1rem;
+    padding-top: 4rem;
+    box-shadow: -3px -3px 3px rgb(0, 0, 0, 0.7);
+    width: 100%;
+    margin-top: 4rem;
+    padding-top: 1rem;
+    box-sizing: border-box;
+    border-width: 0;
+    border-style: solid;
+    border-color: #e5e7eb;
+}
+
+#contact h2 em {
+    font-style: italic;
+    color: rgb(79, 70, 229);
+}
+.titre-contact {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 2px;
+    border-bottom: 3px solid rgb(5, 150, 105); /*Autrefois - Rouge: #C0392B*/
+    padding-bottom: 10px;
+    padding-top: 40px;
+    /* TODO : trait rouge sous le titre (border-bottom 3px solid
++ rouge de la charte, padding-bottom 10px) */
+}
+#contact .sous-titre-contact {
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.formulaire {
+    width: 50%;
+    margin: auto;
+    background-color: #DDDDDD;
+    border-radius: 10px;
+}
+
+.formulaire p {
+    margin: 15px;
+}
+
+.nom_email {
+    display: flex;
+    width: 100%;
+    margin: auto;
+    gap: 2rem;
+    justify-content: space-between;
+}
+
+.nom_email .email {
+    padding-right: 0;
+}
+
+.formulaire label {
+    display: block;
+    padding-top: 18px;
+    font-weight: bold;
+    /* TODO : chaque label sur sa propre ligne (display),
+18px d'espace au-dessus, texte en gras (font-weight) */
+}
+
+.formulaire input,
+.formulaire select,
+.formulaire textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #CCCCCC;
+    font-family: Arial, sans-serif;
+
+}
+
+.case label {
+    display: inline;
+    /* le label de la case reste sur la même ligne */
+    font-weight: normal;
+}
+
+.case input {
+    width: auto;
+    /* sinon la case ferait 100% de large */
+}
+
+.bouton {
+    background-color: rgb(79, 70, 229);
+    color: #FFFFFF;
+    padding-top: 20px;
+    margin: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 10px;
+    /* TODO : fond rouge de la charte, texte blanc, aucune bordure
+(border: none), padding 12px 22px, 20px d'espace au-dessus,
+font-size 16px, et cursor: pointer */
+}
+
+.bouton:hover {
+    background-color: rgb(20, 16, 83);
+}
+/* TODO : au survol du bouton (.bouton:hover), un rouge plus sombre : #96281B */
+
+.boutons {
+    display: flex;
+}
+
+.formulaire p label .message {
+    display: none;
+}
+
+.formulaire p .mail {
+    display: none;
+}
+
+.acces .bouton {
+    padding: 10px;
+}
+
+.contact_portfolio {
+    display: flex;
+}
+
+.acces .mail {
+    background-color: #FFFFFF;
+    color: #222222;
+}
